@@ -71,7 +71,7 @@ class DashboardFragment : Fragment() {
             binding.cvWeather.visibility = View.GONE
 
             try {
-                val response = RetrofitClient.api.getWeather(city, "MY_API_KEY_HERE", unitSystem)
+                val response = RetrofitClient.api.getWeather(city, "83a32c8b66151ca48893e4a1a3be5457", unitSystem)
                 
                 binding.progressBar.visibility = View.GONE
                 binding.tvErrorMessage.visibility = View.GONE

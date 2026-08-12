@@ -28,6 +28,16 @@ class SavedFragment : Fragment() {
         return binding.root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding.fabAddLocation.setOnClickListener {
+            // Navigate back to Dashboard/Search
+            activity?.findViewById<com.google.android.material.bottomnavigation.BottomNavigationView>(
+                com.example.weatherapp.R.id.bottomNav
+            )?.selectedItemId = com.example.weatherapp.R.id.nav_forecast
+        }
+    }
+
     override fun onResume() {
         super.onResume()
         setupRecyclerView()
@@ -63,7 +73,7 @@ class SavedFragment : Fragment() {
                 viewLifecycleOwner.lifecycleScope.launch {
                     try {
                         val result = RetrofitClient.api.getWeather(
-                            city, "MY_API_KEY_HERE", unitSystem
+                            city, "83a32c8b66151ca48893e4a1a3be5457", unitSystem
                         )
                         adapter.updateWeatherFor(city, result)
                     } catch (e: Exception) {
