@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Weather App</string>
+    <string name="app_title">WeatherSky</string>
+    <string name="hint_enter_city">Enter city name</string>
+    <string name="btn_search_weather">Search Weather</string>
+    <string name="label_current_weather">Current Weather</string>
+    <string name="label_humidity">HUMIDITY</string>
+    <string name="label_wind_speed">WIND SPEED</string>
+    <string name="nav_forecast">Forecast</string>
+    <string name="nav_saved">Saved</string>
+    <string name="nav_settings">Settings</string>
+    <string name="desc_remove_city">Remove city</string>
+    <string name="msg_no_saved_cities">No saved cities yet. Bookmark a city from the Forecast tab.</string>
+    <string name="settings_title">Settings</string>
+    <string name="label_temp_unit">Temperature Unit</string>
+    <string name="unit_metric_label">°C / km/h</string>
+    <string name="unit_imperial_label">°F / mph</string>
+    <string name="unit_description">This also affects wind speed units.</string>
 </resources>
